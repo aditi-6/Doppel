@@ -1,0 +1,6 @@
+Type,File A,File B,Hash,File Size,Similarity
+"EXACT_DUPLICATE","C:\Users\STELLA\Doppel\Doppel\test-data\file1.txt","","4f05bb87892f2158972c756ba5ee52ee7a39dc0d308bb42c4f5c5aa71af80239",48,
+"EXACT_DUPLICATE","C:\Users\STELLA\Doppel\Doppel\test-data\file2.txt","","4f05bb87892f2158972c756ba5ee52ee7a39dc0d308bb42c4f5c5aa71af80239",48,
+"SIMILAR_TEXT","C:\Users\STELLA\Doppel\Doppel\test-data\file1.txt","C:\Users\STELLA\Doppel\Doppel\test-data\file2.txt",,,100.00
+"SIMILAR_TEXT","C:\Users\STELLA\Doppel\Doppel\test-data\file1.txt","C:\Users\STELLA\Doppel\Doppel\test-data\file3.txt",,,77.78
+"SIMILAR_TEXT","C:\Users\STELLA\Doppel\Doppel\test-data\file2.txt","C:\Users\STELLA\Doppel\Doppel\test-data\file3.txt",,,77.78
