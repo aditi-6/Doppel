@@ -38,17 +38,17 @@ Doppel follows a layered flow: user input is validated, the directory is scanned
                  └────────┬───────┘
                           ▼
                  ┌────────────────────┐
-                 │ DirectoryScanner   │  (recursive discovery)
+                 │   DirectoryScanner │  (recursive discovery)
                  └────────┬───────────┘
                           ▼
                  List<FileMetadata>
                           │
-        ┌─────────────────┴─────────────────┐
-        ▼                                    ▼
-┌──────────────────┐                ┌────────────────────┐
-│ DuplicateDetector │                │  JaccardSimilarity  │
-│ (size → SHA-256)  │                │  (text file pairs)  │
-└─────────┬─────────┘                └──────────┬─────────┘
+        ┌─────────────────┴────────────────────┐
+        ▼                                      ▼
+┌──────────────────┐                  ┌────────────────────┐
+│ DuplicateDetector│                  │  JaccardSimilarity │
+│ (size → SHA-256) │                  │  (text file pairs) │
+└─────────┬────────┘                  └──────────┬─────────┘
           ▼                                      ▼
   List<DuplicateGroup>                 List<SimilarityResult>
           └───────────────┬──────────────────────┘
@@ -60,8 +60,8 @@ Doppel follows a layered flow: user input is validated, the directory is scanned
               ┌────────────┴────────────┐
               ▼                         ▼
      ┌──────────────────┐     ┌────────────────────┐
-     │ ScanRepository    │     │  ReportGenerator    │
-     │ (SQLite via JDBC) │     │  (console / CSV)    │
+     │ ScanRepository   │     │  ReportGenerator   │
+     │ (SQLite via JDBC)│     │  (console / CSV)   │
      └──────────────────┘     └────────────────────┘
 ```
 
